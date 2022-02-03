@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   get 'users/index'
   get 'users/show'
 
-  resource :users, only: [:index, :show] do
-    resource :posts, only: [:index, :show]
+  resource :users, only: %i[index show] do
+    resource :posts, only: %i[index show]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
