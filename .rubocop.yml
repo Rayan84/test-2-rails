@@ -4,6 +4,10 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
+    - "test/test_helper.rb"
+    - "bin/bundle"
+    - "config/puma.rb"
+    - "config/environments/production.rb"
 
   DisplayCopNames: true
 
